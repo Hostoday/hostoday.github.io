@@ -98,15 +98,11 @@ main {
   justify-self: end;
 }
 .profile-photo {
-  width: 100%;
-  height: auto;
-  aspect-ratio: auto;
-  object-fit: contain;
-  object-position: center top;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: var(--surface);
-  box-shadow: var(--shadow);
+  width: 176px;
+  height: 176px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 28%;
 }
 .kicker {
   margin: 0 0 11px; color: var(--accent); font-size: .78rem; font-weight: 750;
