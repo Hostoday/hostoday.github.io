@@ -84,7 +84,25 @@ main {
   width: min(var(--content-width), calc(100% - 40px));
   margin: 0 auto; padding: 76px 0 84px;
 }
-.hero { max-width: 850px; margin-bottom: 64px; }
+.hero { max-width: none; margin-bottom: 64px; }
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 54px;
+  align-items: start;
+}
+.hero-content { min-width: 0; }
+.profile-photo-wrap { margin: 18px 0 0; }
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
 .kicker {
   margin: 0 0 11px; color: var(--accent); font-size: .78rem; font-weight: 750;
   letter-spacing: .11em; text-transform: uppercase;
@@ -137,6 +155,7 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.8rem); margin: 0 0 16px; font-weight: 760; 
 .pub-title a:hover { color: var(--accent); }
 .pub-authors, .pub-meta { margin: 0 0 4px; color: var(--muted); font-size: .91rem; line-height: 1.55; }
 .pub-authors .me { color: var(--text); font-weight: 700; }
+.pub-award { margin: 6px 0 0; color: var(--accent); font-size: .86rem; font-weight: 700; }
 .pub-links { display: flex; flex-wrap: wrap; gap: 7px 15px; margin-top: 13px; }
 .pub-links a, .pub-links button {
   appearance: none; border: 0; padding: 0; background: transparent; color: var(--accent);
@@ -181,6 +200,11 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.8rem); margin: 0 0 16px; font-weight: 760; 
   color: var(--muted); font-size: .8rem; display: flex; justify-content: space-between; gap: 20px;
 }
 
+
+@media (max-width: 860px) {
+  .hero-layout { grid-template-columns: minmax(0, 1fr) 190px; gap: 36px; }
+}
+
 @media (max-width: 720px) {
   .nav-wrap, main, .footer-wrap { width: min(100% - 28px, var(--content-width)); }
   .nav-wrap { min-height: 61px; }
@@ -195,6 +219,8 @@ h1 { font-size: clamp(2.6rem, 7vw, 4.8rem); margin: 0 0 16px; font-weight: 760; 
   .site-nav a:hover, .site-nav a[aria-current="page"] { background: var(--surface); box-shadow: none; }
   main { padding: 52px 0 65px; }
   .hero { margin-bottom: 50px; }
+  .hero-layout { grid-template-columns: 1fr; gap: 0; }
+  .profile-photo-wrap { width: min(210px, 62vw); margin: 30px 0 0; }
   h1 { font-size: clamp(2.5rem, 16vw, 4rem); }
   .section { margin-top: 58px; }
   .section-head { align-items: flex-start; }

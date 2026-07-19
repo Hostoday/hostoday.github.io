@@ -31,3 +31,11 @@ Google Scholar, preprint, code 링크는 URL이 제공되면 추가하면 됩니
 - `publications.html`: 전체 논문 목록, Summary, BibTeX
 - `research.html`: 연구 의제와 프로젝트별 상세 설명
 - `cv.html`: HTML CV 요약과 PDF 뷰어
+
+## 반영된 수상 내역
+
+- HCLT 2025 Outstanding Presentation Paper Award (October 2025)
+
+## 프로필 사진 교체
+
+메인 프로필 사진은 `assets/img/profile-hojun.jpg`입니다. 같은 파일명으로 교체하면 레이아웃 수정 없이 반영됩니다.
