@@ -1,16 +1,10 @@
-.nojekyll
-404.html
-EDIT_CHECKLIST.md
-README_KO.md
-assets/favicon.svg
-assets/pdf/Hojun_Jeong_CV.docx
-assets/pdf/Hojun_Jeong_CV.pdf
-assets/script.js
-assets/styles.css
-cv.html
-index.html
-publications.html
-research.html
-robots.txt
+Hojun Jeong academic website — final v2
 
-assets/img/profile-hojun.jpg
+Upload every file and folder in this directory to the root of:
+https://github.com/Hostoday/hostoday.github.io
+
+Latest changes:
+- LinkedIn added to the homepage contact links
+- Email opens a pre-addressed Gmail compose window
+- main and header name sizes increased slightly
+- profile-side layout, HCLT 2025 award, and expanded content retained

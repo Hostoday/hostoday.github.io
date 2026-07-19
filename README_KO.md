@@ -39,3 +39,14 @@ Google Scholar, preprint, code 링크는 URL이 제공되면 추가하면 됩니
 ## 프로필 사진 교체
 
 메인 프로필 사진은 `assets/img/profile-hojun.jpg`입니다. 같은 파일명으로 교체하면 레이아웃 수정 없이 반영됩니다.
+
+## 프로필 사진 배치
+
+프로필 사진은 데스크톱과 태블릿에서 소개문 오른쪽에 표시됩니다. 화면 폭이 560px 이하인 작은 휴대전화에서는 가독성을 위해 소개문 아래로 이동합니다.
+
+
+## 2026-07 연락처 및 이름 크기 업데이트
+
+- LinkedIn: `https://www.linkedin.com/in/hojun-jeong-korean/`
+- Email 버튼: Gmail 새 메일 작성 창을 열고 수신자를 자동 입력
+- 메인 이름과 상단 사이트 이름을 소폭 확대
