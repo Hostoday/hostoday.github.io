@@ -1,55 +1,33 @@
-# Hojun Jeong Research Website
+# Hojun Jeong Research Website — Expanded Text Version
 
-GitHub Pages에 바로 올릴 수 있는 정적 연구자 웹사이트입니다.
+이미지 없이 텍스트 중심으로 구성한 연구자 홈페이지입니다. 기존 버전보다 홈페이지, Research, CV 내용을 확장했습니다.
 
-## 가장 쉬운 배포 방법
+## 이미 배포한 사이트를 업데이트하는 방법
 
-1. GitHub에서 `본인아이디.github.io`라는 **Public** repository를 만듭니다.
-2. 이 폴더 안의 파일을 모두 repository 최상위에 업로드합니다.
-3. GitHub repository에서 `Settings → Pages`로 이동합니다.
-4. `Source: Deploy from a branch`, `Branch: main`, `Folder: /(root)`를 선택합니다.
-5. 저장 후 `https://본인아이디.github.io/`에 접속합니다.
+GitHub 저장소 `Hostoday/hostoday.github.io`에서 기존 파일을 이 폴더의 파일로 덮어쓰면 됩니다.
 
-## 수정 위치
+가장 중요한 변경 파일은 다음 네 개입니다.
 
-- 소개 및 News: `index.html`
-- 논문: `publications.html`
-- 연구 프로젝트: `research.html`
-- 스타일: `assets/styles.css`
-- 상호작용: `assets/script.js`
-- CV PDF: `assets/pdf/Hojun_Jeong_CV.pdf`
+- `index.html`
+- `research.html`
+- `cv.html`
+- `assets/styles.css`
 
-## GitHub / Google Scholar 링크 추가
+`publications.html`도 연구 페이지 연결과 문구가 수정되었으므로 함께 교체하는 것이 좋습니다.
 
-각 HTML 파일의 다음 부분을 찾습니다.
+GitHub 웹 화면에서 각각의 기존 파일을 삭제하고 새 파일을 올리는 것보다, `Add file → Upload files`에서 이 폴더의 전체 내용을 다시 드래그한 뒤 같은 이름의 파일을 교체하는 방식이 간단합니다. GitHub가 같은 경로의 파일을 자동으로 변경사항으로 처리합니다.
 
-```html
-<div class="link-row">
-```
+## 현재 연결된 링크
 
-아래 링크를 추가하면 됩니다.
+- Email: `wjdghwns1096@gmail.com`
+- GitHub: `https://github.com/Hostoday`
+- CV: `assets/pdf/Hojun_Jeong_CV.pdf`
 
-```html
-<a href="https://github.com/YOUR_ID" target="_blank" rel="noopener">GitHub</a>
-<a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" rel="noopener">Google Scholar</a>
-```
+Google Scholar, preprint, code 링크는 URL이 제공되면 추가하면 됩니다.
 
-## 논문 링크 추가
+## 콘텐츠 구조
 
-`publications.html`과 `index.html`에서 `Preprint pending`, `Code pending` 부분을 다음처럼 교체합니다.
-
-```html
-<a href="PREPRINT_URL" target="_blank" rel="noopener">Preprint</a>
-<a href="CODE_URL" target="_blank" rel="noopener">Code</a>
-```
-
-홈페이지와 Publications 페이지에 논문 마크업이 각각 있으므로 두 파일을 함께 수정해야 합니다.
-
-## 이미지 사용
-
-현재 버전은 프로필 사진과 논문·연구 썸네일을 사용하지 않는 텍스트 중심 구성입니다. 논문은 제목, 저자, 학회 정보, 링크 순으로 표시됩니다.
-
-## 확인이 필요한 내용
-
-- 기존 CV에서 수상 내역의 행사명이 HCLT와 KCC로 서로 다르게 적혀 있어 사이트에서는 Award를 제외했습니다.
-- Preprint, Code, GitHub, Google Scholar URL은 제공되지 않아 연결하지 않았습니다.
+- `index.html`: 소개, 연구 개요, News, Selected Publications, Experience and Education
+- `publications.html`: 전체 논문 목록, Summary, BibTeX
+- `research.html`: 연구 의제와 프로젝트별 상세 설명
+- `cv.html`: HTML CV 요약과 PDF 뷰어

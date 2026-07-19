@@ -1,6 +1,7 @@
 .nojekyll
 404.html
 EDIT_CHECKLIST.md
+MANIFEST.txt
 README_KO.md
 assets/favicon.svg
 assets/pdf/Hojun_Jeong_CV.pdf
@@ -11,4 +12,3 @@ index.html
 publications.html
 research.html
 robots.txt
-MANIFEST.txt
