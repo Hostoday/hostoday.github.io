@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Research projects by Hojun Jeong on sequential knowledge editing, forgetting, and layer-wise representation dynamics." name="description"/>
+<meta content="Hojun Jeong" name="author"/>
+<meta content="Research · Hojun Jeong" property="og:title"/>
+<meta content="Research projects by Hojun Jeong on sequential knowledge editing, forgetting, and layer-wise representation dynamics." property="og:description"/>
+<meta content="website" property="og:type"/>
+<title>Research · Hojun Jeong</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="assets/styles.css" rel="stylesheet"/>
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<header class="site-header">
+<div class="nav-wrap">
+<a class="site-name" href="index.html">Hojun Jeong <span>정호준</span></a>
+<div class="nav-actions">
+<nav aria-label="Primary navigation" class="site-nav">
+<a href="index.html">About</a><a href="publications.html">Publications</a><a aria-current="page" href="research.html">Research</a><a href="cv.html">CV</a>
+</nav>
+<button aria-label="Use dark theme" class="icon-button" data-theme-toggle="" type="button"></button>
+<button aria-expanded="false" aria-label="Open navigation" class="icon-button menu-button" data-menu-toggle="" type="button">
+<svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</header>
+<main id="content">
+<header class="page-header"><p class="kicker">Current work</p><h1>Research</h1><p>My current work examines why post-training changes some knowledge reliably while destabilizing other knowledge, and how those dynamics accumulate under sequential updates.</p></header>
+<article class="project" id="klod">
+
+<div><h2>KLOD</h2><p class="project-subtitle">Locality-Preserving Knowledge Editing via Non-Target Distribution Preservation</p>
+<p>Fine-tuning-based editing can achieve high edit success while changing unrelated predictions. The problem becomes more difficult when multiple edits are applied sequentially.</p>
+<h3>Approach</h3><p>KLOD uses a KL-based objective to preserve the distribution over non-target tokens during knowledge updates. The aim is to reduce locality degradation without sacrificing the intended edit.</p>
+<h3>Contribution</h3><p>Led method development, implementation, baseline selection, experimental design, ablation studies, and result analysis; drafted the initial manuscript structure and core technical content.</p>
+<span class="status-line">Submitted to ARR · May 2026</span></div>
+</article>
+<article class="project" id="target-prior">
+
+<div><h2>Target-Token Prior</h2><p class="project-subtitle">A predictor of forgetting in fine-tuning-based knowledge editing</p>
+<p>This project asks whether knowledge degradation after an edit can be anticipated from the model’s pre-update probability assigned to the target token.</p>
+<h3>Approach</h3><p>We analyze target-token prior probability as a diagnostic signal and test an intervention that raises the target knowledge’s pre-update probability before fine-tuning.</p>
+<h3>Finding and transition</h3><p>The intervention was useful in single-edit settings but was not consistently reliable under sequential updates. That limitation directly motivated the KLOD project.</p>
+<span class="status-line">Submitted to ARR · May 2026</span></div>
+</article>
+<article class="project" id="layer-dynamics">
+
+<div><h2>Early-Stage Forgetting and Layer-Wise Dynamics</h2><p class="project-subtitle">Ongoing mechanistic analysis of post-training transformations</p>
+<p>Severe forgetting can concentrate in the earliest stages of fine-tuning, including under objectives intended to preserve predictive distributions.</p>
+<h3>Current analysis</h3><p>I am examining layer-wise transformations from rotational and scaling perspectives, and studying connections among representation subspaces, output distributions, and computational pathways used to express knowledge.</p>
+<span class="status-line">Ongoing research</span></div>
+</article>
+</main>
+<footer class="site-footer"><div class="footer-wrap"><span>© 2026 Hojun Jeong</span><span>Last updated July 2026</span></div></footer>
+<script src="assets/script.js"></script>
+</body>
+</html>
