@@ -1,108 +1,486 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Publications by Hojun Jeong on knowledge editing and dialogue summarization." name="description"/>
-<meta content="Hojun Jeong" name="author"/>
-<meta content="Publications · Hojun Jeong" property="og:title"/>
-<meta content="Publications by Hojun Jeong on knowledge editing and dialogue summarization." property="og:description"/>
-<meta content="website" property="og:type"/>
-<title>Publications · Hojun Jeong</title>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="assets/styles.css?v=20260719-4" rel="stylesheet"/>
-<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <meta
+    content="Publications by Hojun Jeong on knowledge editing, language-model forgetting, and dialogue summarization."
+    name="description"
+  />
+  <meta content="Hojun Jeong" name="author" />
+
+  <link
+    href="https://hostoday.github.io/publications.html"
+    rel="canonical"
+  />
+
+  <meta content="Publications · Hojun Jeong" property="og:title" />
+  <meta
+    content="Publications by Hojun Jeong on knowledge editing, language-model forgetting, and dialogue summarization."
+    property="og:description"
+  />
+  <meta content="website" property="og:type" />
+  <meta
+    content="https://hostoday.github.io/publications.html"
+    property="og:url"
+  />
+
+  <meta content="summary" name="twitter:card" />
+  <meta content="Publications · Hojun Jeong" name="twitter:title" />
+  <meta
+    content="Research on knowledge editing, language-model forgetting, and dialogue summarization."
+    name="twitter:description"
+  />
+
+  <title>Publications · Hojun Jeong</title>
+
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" />
+  <link
+    href="assets/styles.css?v=20260723-1"
+    rel="stylesheet"
+  />
+
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        localStorage.getItem("theme") ||
+        (matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light");
+    } catch (error) {
+      // Use the default theme when localStorage is unavailable.
+    }
+  </script>
 </head>
+
 <body>
-<a class="skip-link" href="#content">Skip to content</a>
-<header class="site-header">
-<div class="nav-wrap">
-<a class="site-name" href="index.html">Hojun Jeong <span>정호준</span></a>
-<div class="nav-actions">
-<nav aria-label="Primary navigation" class="site-nav">
-<a href="index.html">About</a><a aria-current="page" href="publications.html">Publications</a><a href="research.html">Research</a><a href="cv.html">CV</a>
-</nav>
-<button aria-label="Use dark theme" class="icon-button" data-theme-toggle="" type="button"></button>
-<button aria-expanded="false" aria-label="Open navigation" class="icon-button menu-button" data-menu-toggle="" type="button">
-<svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
-</button>
-</div>
-</div>
-</header>
-<main id="content">
-<header class="page-header"><p class="kicker">Research output</p><h1>Publications</h1><p>Manuscripts and conference papers on knowledge editing, forgetting, and dialogue summarization. Links to preprints and code can be added as they become publicly available.</p></header>
-<h2 class="group-title">Manuscripts submitted</h2>
-<div class="publication-list"><article class="publication" id="klod-publication">
-<div>
-<span class="pub-venue">ARR · May 2026</span>
-<h3 class="pub-title">KLOD: Locality-Preserving Knowledge Editing via Non-Target Distribution Preservation</h3>
-<p class="pub-authors"><span class="me">Hojun Jeong*</span>, Gyunyeon Kim*, and Sangwoo Kang</p>
-<p class="pub-meta">Under review at ACL Rolling Review, May 2026 cycle · *Equal contribution</p>
-<div class="pub-links"><button aria-expanded="false" data-label="Summary" data-toggle-target="summary-klod" type="button">Summary</button>
-<button aria-expanded="false" data-label="BibTeX" data-toggle-target="bib-klod" type="button">BibTeX</button><span class="pending">Preprint pending</span><span class="pending">Code pending</span></div>
-<div class="pub-details" id="summary-klod"><p>Studies sequential knowledge editing and proposes a KL-based objective designed to preserve the model’s non-target token distribution while maintaining edit effectiveness.</p></div>
-<div class="pub-details" id="bib-klod"><pre id="bibtext-klod">@article{jeong2026klod,
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="site-name" href="index.html">
+        Hojun Jeong <span>정호준</span>
+      </a>
+
+      <div class="nav-actions">
+        <nav
+          aria-label="Primary navigation"
+          class="site-nav"
+          id="primary-navigation"
+        >
+          <a href="index.html">About</a>
+          <a aria-current="page" href="publications.html">
+            Publications
+          </a>
+          <a href="research.html">Research</a>
+          <a href="cv.html">CV</a>
+        </nav>
+
+        <button
+          aria-label="Use dark theme"
+          class="icon-button"
+          data-theme-toggle
+          type="button"
+        ></button>
+
+        <button
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+          aria-label="Open navigation"
+          class="icon-button menu-button"
+          data-menu-toggle
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            height="18"
+            viewBox="0 0 24 24"
+            width="18"
+          >
+            <path
+              d="M4 7h16M4 12h16M4 17h16"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-width="2"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <header class="page-header">
+      <p class="kicker">Research output</p>
+      <h1>Publications</h1>
+      <p>
+        Manuscripts and conference papers on knowledge editing,
+        catastrophic forgetting, sequential model updates, and dialogue
+        summarization.
+      </p>
+    </header>
+
+    <!-- Manuscripts under review -->
+    <h2 class="group-title">Manuscripts Under Review</h2>
+
+    <div class="publication-list">
+      <article class="publication" id="klod-publication">
+        <div>
+          <span class="pub-venue">ARR · May 2026</span>
+
+          <h3 class="pub-title">
+            KLOD: Locality-Preserving Knowledge Editing via Non-Target
+            Distribution Preservation
+          </h3>
+
+          <p class="pub-authors">
+            <span class="me">Hojun Jeong*</span>, Gyunyeon Kim*, and
+            Sangwoo Kang
+          </p>
+
+          <p class="pub-meta">
+            Under review at ACL Rolling Review, May 2026 cycle ·
+            *Equal contribution
+          </p>
+
+          <div class="pub-links">
+            <button
+              aria-controls="summary-klod"
+              aria-expanded="false"
+              data-label="Summary"
+              data-toggle-target="summary-klod"
+              type="button"
+            >
+              Summary
+            </button>
+
+            <button
+              aria-controls="bib-klod"
+              aria-expanded="false"
+              data-label="BibTeX"
+              data-toggle-target="bib-klod"
+              type="button"
+            >
+              BibTeX
+            </button>
+
+            <!-- Add public links when available.
+            <a href="PREPRINT_URL" rel="noopener" target="_blank">
+              Preprint
+            </a>
+            <a href="CODE_URL" rel="noopener" target="_blank">
+              Code
+            </a>
+            -->
+          </div>
+
+          <div class="pub-details" id="summary-klod">
+            <p>
+              Introduces a bounded, distribution-preserving objective
+              for fine-tuning-based knowledge editing. KLOD combines a
+              one-sided target logit-odds objective with KL preservation
+              of the renormalized non-target distribution at target
+              positions and full next-token distribution preservation
+              at prefix positions. Across 3,000 sequential edits on
+              CounterFact and ZsRE, KLOD substantially improves locality
+              while maintaining high edit reliability.
+            </p>
+          </div>
+
+          <div class="pub-details" id="bib-klod">
+            <pre id="bibtext-klod">@unpublished{jeong2026klod,
   title  = {KLOD: Locality-Preserving Knowledge Editing via Non-Target Distribution Preservation},
   author = {Jeong, Hojun and Kim, Gyunyeon and Kang, Sangwoo},
-  note   = {Under review at ACL Rolling Review, May 2026 cycle},
+  note   = {Manuscript under review at ACL Rolling Review, May 2026 cycle},
   year   = {2026}
-}</pre><button class="button" data-copy-target="bibtext-klod" type="button">Copy BibTeX</button><span aria-live="polite" class="copy-status"></span></div>
-</div>
-</article><article class="publication" id="prior-publication">
-<div>
-<span class="pub-venue">ARR · May 2026</span>
-<h3 class="pub-title">Target-Token Prior as a Predictor of Forgetting in Fine-Tuning-Based Knowledge Editing</h3>
-<p class="pub-authors"><span class="me">Hojun Jeong*</span>, Gyunyeon Kim*, and Sangwoo Kang</p>
-<p class="pub-meta">Under review at ACL Rolling Review, May 2026 cycle · *Equal contribution</p>
-<div class="pub-links"><button aria-expanded="false" data-label="Summary" data-toggle-target="summary-prior" type="button">Summary</button>
-<button aria-expanded="false" data-label="BibTeX" data-toggle-target="bib-prior" type="button">BibTeX</button><span class="pending">Preprint pending</span><span class="pending">Code pending</span></div>
-<div class="pub-details" id="summary-prior"><p>Investigates whether a target token’s probability before an update predicts later knowledge degradation, and evaluates a probability-increasing intervention before fine-tuning-based editing.</p></div>
-<div class="pub-details" id="bib-prior"><pre id="bibtext-prior">@article{jeong2026targetprior,
+}</pre>
+
+            <button
+              class="button"
+              data-copy-target="bibtext-klod"
+              type="button"
+            >
+              Copy BibTeX
+            </button>
+
+            <span
+              aria-live="polite"
+              class="copy-status"
+            ></span>
+          </div>
+        </div>
+      </article>
+
+      <article class="publication" id="prior-publication">
+        <div>
+          <span class="pub-venue">ARR · May 2026</span>
+
+          <h3 class="pub-title">
+            Target-Token Prior as a Predictor of Forgetting in
+            Fine-Tuning-Based Knowledge Editing
+          </h3>
+
+          <p class="pub-authors">
+            <span class="me">Hojun Jeong*</span>, Gyunyeon Kim*, and
+            Sangwoo Kang
+          </p>
+
+          <p class="pub-meta">
+            Under review at ACL Rolling Review, May 2026 cycle ·
+            *Equal contribution
+          </p>
+
+          <div class="pub-links">
+            <button
+              aria-controls="summary-prior"
+              aria-expanded="false"
+              data-label="Summary"
+              data-toggle-target="summary-prior"
+              type="button"
+            >
+              Summary
+            </button>
+
+            <button
+              aria-controls="bib-prior"
+              aria-expanded="false"
+              data-label="BibTeX"
+              data-toggle-target="bib-prior"
+              type="button"
+            >
+              BibTeX
+            </button>
+
+            <!-- Add public links when available.
+            <a href="PREPRINT_URL" rel="noopener" target="_blank">
+              Preprint
+            </a>
+            <a href="CODE_URL" rel="noopener" target="_blank">
+              Code
+            </a>
+            -->
+          </div>
+
+          <div class="pub-details" id="summary-prior">
+            <p>
+              Identifies first-token target prior as a signal associated
+              with forgetting in fine-tuning-based knowledge editing
+              and proposes Probability-Lift Fine-Tuning for Knowledge
+              Editing (PLFT-KE). PLFT-KE lifts low-prior targets in
+              activation space, converts the resulting latent shift
+              into a rank-1 parameter initialization, and then performs
+              fine-tuning consolidation. Experiments on CounterFact and
+              ZsRE show improved generalization and specificity over
+              fine-tuning-based baselines while preserving edit
+              efficacy.
+            </p>
+          </div>
+
+          <div class="pub-details" id="bib-prior">
+            <pre id="bibtext-prior">@unpublished{jeong2026targetprior,
   title  = {Target-Token Prior as a Predictor of Forgetting in Fine-Tuning-Based Knowledge Editing},
   author = {Jeong, Hojun and Kim, Gyunyeon and Kang, Sangwoo},
-  note   = {Under review at ACL Rolling Review, May 2026 cycle},
+  note   = {Manuscript under review at ACL Rolling Review, May 2026 cycle},
   year   = {2026}
-}</pre><button class="button" data-copy-target="bibtext-prior" type="button">Copy BibTeX</button><span aria-live="polite" class="copy-status"></span></div>
-</div>
-</article></div>
-<h2 class="group-title">Domestic conference publications</h2>
-<div class="publication-list"><article class="publication">
-<div>
-<span class="pub-venue">HCLT · 2025</span>
-<h3 class="pub-title">A Verify-Refine Hybrid for Dialogue Summarization with Topic Segmentation and Keypoint Coverage</h3>
-<p class="pub-authors"><span class="me">Hojun Jeong</span> and Sangwoo Kang</p>
-<p class="pub-meta">37th Annual Conference on Human and Language Technology, pp. 359–364, October 2025</p><p class="pub-award">Outstanding Presentation Paper Award · HCLT 2025</p>
-<div class="pub-links"><button aria-expanded="false" data-label="Summary" data-toggle-target="summary-verify" type="button">Summary</button>
-<button aria-expanded="false" data-label="BibTeX" data-toggle-target="bib-verify" type="button">BibTeX</button></div>
-<div class="pub-details" id="summary-verify"><p>Presents a verify-refine framework for dialogue summarization that combines topic segmentation with keypoint coverage checks.</p></div>
-<div class="pub-details" id="bib-verify"><pre id="bibtext-verify">@inproceedings{jeong2025verifyrefine,
+}</pre>
+
+            <button
+              class="button"
+              data-copy-target="bibtext-prior"
+              type="button"
+            >
+              Copy BibTeX
+            </button>
+
+            <span
+              aria-live="polite"
+              class="copy-status"
+            ></span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Published conference papers -->
+    <h2 class="group-title">Conference Publications</h2>
+
+    <div class="publication-list">
+      <article
+        class="publication"
+        id="verify-refine-publication"
+      >
+        <div>
+          <span class="pub-venue">HCLT · 2025</span>
+
+          <h3 class="pub-title">
+            A Verify-Refine Hybrid for Dialogue Summarization with
+            Topic Segmentation and Keypoint Coverage
+          </h3>
+
+          <p class="pub-authors">
+            <span class="me">Hojun Jeong</span> and Sangwoo Kang
+          </p>
+
+          <p class="pub-meta">
+            37th Annual Conference on Human and Language Technology,
+            pp. 359–364, October 2025
+          </p>
+
+          <p class="pub-language">Paper in Korean</p>
+
+          <p class="pub-award">
+            Outstanding Presentation Paper Award · HCLT 2025
+          </p>
+
+          <div class="pub-links">
+            <button
+              aria-controls="summary-verify"
+              aria-expanded="false"
+              data-label="Summary"
+              data-toggle-target="summary-verify"
+              type="button"
+            >
+              Summary
+            </button>
+
+            <button
+              aria-controls="bib-verify"
+              aria-expanded="false"
+              data-label="BibTeX"
+              data-toggle-target="bib-verify"
+              type="button"
+            >
+              BibTeX
+            </button>
+          </div>
+
+          <div class="pub-details" id="summary-verify">
+            <p>
+              Presents a verify-refine framework for dialogue
+              summarization that first segments a conversation by topic
+              and then checks whether the generated summary sufficiently
+              covers its central keypoints.
+            </p>
+          </div>
+
+          <div class="pub-details" id="bib-verify">
+            <pre id="bibtext-verify">@inproceedings{jeong2025verifyrefine,
   title     = {A Verify-Refine Hybrid for Dialogue Summarization with Topic Segmentation and Keypoint Coverage},
   author    = {Jeong, Hojun and Kang, Sangwoo},
   booktitle = {Proceedings of the 37th Annual Conference on Human and Language Technology},
   pages     = {359--364},
-  year      = {2025}
-}</pre><button class="button" data-copy-target="bibtext-verify" type="button">Copy BibTeX</button><span aria-live="polite" class="copy-status"></span></div>
-</div>
-</article><article class="publication">
-<div>
-<span class="pub-venue">KCC · 2025</span>
-<h3 class="pub-title">Structured Zero-Shot Prompts through Rule-Based Intent Analysis for Dialogue Summarization</h3>
-<p class="pub-authors"><span class="me">Hojun Jeong</span> and Sangwoo Kang</p>
-<p class="pub-meta">Korea Computer Congress, July 2025</p>
-<div class="pub-links"><button aria-expanded="false" data-label="Summary" data-toggle-target="summary-intent" type="button">Summary</button>
-<button aria-expanded="false" data-label="BibTeX" data-toggle-target="bib-intent" type="button">BibTeX</button></div>
-<div class="pub-details" id="summary-intent"><p>Explores structured zero-shot prompting for dialogue summarization using rule-based intent analysis.</p></div>
-<div class="pub-details" id="bib-intent"><pre id="bibtext-intent">@inproceedings{jeong2025structured,
+  year      = {2025},
+  note      = {Paper in Korean}
+}</pre>
+
+            <button
+              class="button"
+              data-copy-target="bibtext-verify"
+              type="button"
+            >
+              Copy BibTeX
+            </button>
+
+            <span
+              aria-live="polite"
+              class="copy-status"
+            ></span>
+          </div>
+        </div>
+      </article>
+
+      <article
+        class="publication"
+        id="structured-prompt-publication"
+      >
+        <div>
+          <span class="pub-venue">KCC · 2025</span>
+
+          <h3 class="pub-title">
+            Structured Zero-Shot Prompts through Rule-Based Intent
+            Analysis for Dialogue Summarization
+          </h3>
+
+          <p class="pub-authors">
+            <span class="me">Hojun Jeong</span> and Sangwoo Kang
+          </p>
+
+          <p class="pub-meta">
+            Korea Computer Congress, July 2025
+          </p>
+
+          <p class="pub-language">Paper in Korean</p>
+
+          <div class="pub-links">
+            <button
+              aria-controls="summary-intent"
+              aria-expanded="false"
+              data-label="Summary"
+              data-toggle-target="summary-intent"
+              type="button"
+            >
+              Summary
+            </button>
+
+            <button
+              aria-controls="bib-intent"
+              aria-expanded="false"
+              data-label="BibTeX"
+              data-toggle-target="bib-intent"
+              type="button"
+            >
+              BibTeX
+            </button>
+          </div>
+
+          <div class="pub-details" id="summary-intent">
+            <p>
+              Explores structured zero-shot prompting for dialogue
+              summarization by using rule-based intent analysis to
+              organize conversational information before summary
+              generation.
+            </p>
+          </div>
+
+          <div class="pub-details" id="bib-intent">
+            <pre id="bibtext-intent">@inproceedings{jeong2025structured,
   title     = {Structured Zero-Shot Prompts through Rule-Based Intent Analysis for Dialogue Summarization},
   author    = {Jeong, Hojun and Kang, Sangwoo},
   booktitle = {Proceedings of the Korea Computer Congress},
-  year      = {2025}
-}</pre><button class="button" data-copy-target="bibtext-intent" type="button">Copy BibTeX</button><span aria-live="polite" class="copy-status"></span></div>
-</div>
-</article></div>
-</main>
-<footer class="site-footer"><div class="footer-wrap"><span>© 2026 Hojun Jeong</span><span>Last updated July 2026</span></div></footer>
-<script src="assets/script.js"></script>
+  year      = {2025},
+  note      = {Paper in Korean}
+}</pre>
+
+            <button
+              class="button"
+              data-copy-target="bibtext-intent"
+              type="button"
+            >
+              Copy BibTeX
+            </button>
+
+            <span
+              aria-live="polite"
+              class="copy-status"
+            ></span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>© 2026 Hojun Jeong</span>
+      <span>Last updated July 2026</span>
+    </div>
+  </footer>
+
+  <script
+    defer
+    src="assets/script.js?v=20260723-1"
+  ></script>
 </body>
 </html>
