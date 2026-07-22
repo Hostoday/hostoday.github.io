@@ -159,9 +159,31 @@ h1 {
 .pub-title a { color: var(--text); text-decoration: none; }
 .pub-title a:hover { color: var(--accent); }
 .pub-authors, .pub-meta { margin: 0 0 4px; color: var(--muted); font-size: .91rem; line-height: 1.55; }
-.pub-authors .me { color: var(--text); font-weight: 700; }
-.pub-award { margin: 6px 0 0; color: var(--accent); font-size: .86rem; font-weight: 700; }
-.pub-links { display: flex; flex-wrap: wrap; gap: 7px 15px; margin-top: 13px; }
+.pub-authors .me {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.pub-language {
+  margin: 0.25rem 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.pub-award {
+  margin: 6px 0 0;
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 15px;
+  margin-top: 13px;
+}
 .pub-links a, .pub-links button {
   appearance: none; border: 0; padding: 0; background: transparent; color: var(--accent);
   font: inherit; font-size: .85rem; font-weight: 700; cursor: pointer; text-decoration: none;
