@@ -32,15 +32,41 @@
 <div>
 <p class="project-number">01</p><h2>KLOD</h2><p class="project-subtitle">Locality-Preserving Knowledge Editing via Non-Target Distribution Preservation</p>
 <h3>Motivation</h3><p>Fine-tuning-based knowledge editing can achieve high edit success while shifting unrelated predictions. These side effects become more consequential when edits are applied sequentially, because small distributional changes can accumulate across updates.</p>
-<h3>Central idea</h3><p>KLOD introduces a KL-based objective that preserves the distribution over non-target tokens during an edit. Instead of constraining only a small set of locality examples, the method directly discourages unnecessary redistribution of probability mass away from the target token.</p>
-<h3>Research scope</h3><p>The project studies method design, baseline selection, sequential editing protocols, locality and forgetting evaluation, and ablation analyses. I led implementation, experimental design, result analysis, and the initial manuscript structure and technical writing.</p>
+<h3>Method</h3>
+<p>
+  KLOD is a bounded, distribution-preserving objective for
+  fine-tuning-based knowledge editing. It combines a one-sided
+  logit-odds hinge that stops target amplification after a specified
+  probability threshold, KL preservation of the renormalized
+  non-target distribution at target prediction positions, and
+  full-distribution KL preservation at prefix positions.
+</p>
+<h3>Evaluation</h3>
+<p>
+  We evaluated KLOD under 3,000 sequential edits on CounterFact and
+  ZsRE using LLaMA3-8B-Instruct and Qwen2.5-7B-Instruct, comparing it
+  with direct editing, lifelong editing, and fine-tuning-based methods.
+</p>
+
+<h3>Key result</h3>
+<p>
+  KLOD achieved the highest locality among the evaluated editing
+  methods across all four model–dataset settings while maintaining
+  high edit reliability. On LLaMA3-8B-Instruct with CounterFact, for
+  example, KLOD obtained 44.75 locality and 99.70 reliability, compared
+  with 1.87 locality for LocFT-BF.
+</p>
 <h3>Current status</h3><p>The manuscript is under review in the ACL Rolling Review May 2026 cycle. Preprint and code links will be added when they become public.</p>
 <a class="text-link" href="publications.html#klod-publication">Publication entry →</a>
 </div>
 </article>
 <article class="project" id="target-prior">
 <div>
-<p class="project-number">02</p><h2>Target-Token Prior</h2><p class="project-subtitle">A predictor of forgetting in fine-tuning-based knowledge editing</p>
+<p class="project-number">02</p><h2>Target-Token Prior and PLFT-KE</h2>
+<p class="project-subtitle">
+  Diagnosing low-prior edits and warm-starting fine-tuning-based
+  knowledge editing
+</p>
 <h3>Research question</h3><p>Knowledge edited with the same optimization procedure can exhibit very different levels of degradation. This project asks whether that variation can be anticipated from the probability assigned to the target token before the update.</p>
 <h3>Diagnostic and intervention</h3><p>We analyze target-token prior probability as a sample-level predictor of forgetting and test an intervention that first raises the target fact’s pre-update probability before applying fine-tuning-based editing.</p>
 <h3>Key transition</h3><p>The intervention mitigated forgetting in single-edit settings but did not remain consistently reliable under sequential updates. This limitation suggested that preserving the broader predictive distribution—not only increasing target probability—was necessary, directly motivating KLOD.</p>
