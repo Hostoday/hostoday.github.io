@@ -31,12 +31,70 @@
 
 <article class="project" id="klod">
 <div>
-<p class="project-number">01</p><h2>KLOD</h2><p class="project-subtitle">Locality-Preserving Knowledge Editing via Non-Target Distribution Preservation</p>
-<h3>Motivation</h3><p>Fine-tuning-based knowledge editing can achieve high edit success while shifting unrelated predictions. These side effects become more consequential when edits are applied sequentially, because small distributional changes can accumulate across updates.</p>
-<h3>Central idea</h3><p>KLOD introduces a KL-based objective that preserves the distribution over non-target tokens during an edit. Instead of constraining only a small set of locality examples, the method directly discourages unnecessary redistribution of probability mass away from the target token.</p>
-<h3>Research scope</h3><p>The project studies method design, baseline selection, sequential editing protocols, locality and forgetting evaluation, and ablation analyses. I led implementation, experimental design, result analysis, and the initial manuscript structure and technical writing.</p>
-<h3>Current status</h3><p>Accepted to Findings of the Association for Computational Linguistics: EMNLP 2026. The paper will appear in the Findings proceedings; preprint and code links will be added when they become public.</p>
-<a class="text-link" href="publications.html#klod-publication">Publication entry →</a>
+
+<p class="project-number">01</p>
+
+<h2>KLOD</h2>
+
+<p class="project-subtitle">
+Locality-Preserving Knowledge Editing via Non-Target Distribution Preservation
+</p>
+
+<h3>Motivation</h3>
+
+<p>
+Fine-tuning-based knowledge editing can achieve high edit success while shifting
+unrelated predictions. These side effects become more consequential when edits
+are applied sequentially, because small distributional changes can accumulate
+across updates and cause locality degradation.
+</p>
+
+<h3>Central idea</h3>
+
+<p>
+KLOD combines a bounded target logit-odds objective with two
+distribution-preserving regularizers. It stops target amplification once a
+probability threshold is reached, preserves the target-excluded non-target
+distribution at target positions, and preserves the full next-token
+distribution at prefix positions.
+</p>
+
+<h3>Research scope</h3>
+
+<p>
+The project covers objective design, baseline comparisons, sequential editing
+protocols, locality evaluation, ablation studies, and distributional KL
+analyses on CounterFact and ZsRE with Llama3-8B-Instruct and
+Qwen2.5-7B-Instruct. I led method implementation, experimental design, result
+analysis, and technical writing.
+</p>
+
+<h3>Current status</h3>
+
+<p>
+Accepted to Findings of the Association for Computational Linguistics:
+EMNLP 2026. The paper will appear in the Findings proceedings.
+</p>
+
+<p>
+<a class="text-link"
+   href="assets/pdf/KLOD_EMNLP_2026.pdf"
+   rel="noopener"
+   target="_blank">PDF ↗</a>
+
+<span aria-hidden="true"> · </span>
+
+<a class="text-link"
+   href="https://github.com/Hostoday/KLOD"
+   rel="noopener"
+   target="_blank">Code ↗</a>
+
+<span aria-hidden="true"> · </span>
+
+<a class="text-link"
+   href="publications.html#klod-publication">Publication entry →</a>
+</p>
+
 </div>
 </article>
 
