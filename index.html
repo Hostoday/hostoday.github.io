@@ -91,14 +91,14 @@
 <p class="pub-meta">Findings of the Association for Computational Linguistics: EMNLP 2026 · To appear · *Equal contribution</p>
 
 <div class="pub-links">
-  <button aria-expanded="false" data-label="Summary" data-toggle-target="summary-klod" type="button">Summary</button>
+  <button aria-expanded="false" data-label="Abstract" data-toggle-target="summary-klod" type="button">Summary</button>
   <button aria-expanded="false" data-label="BibTeX" data-toggle-target="bib-klod" type="button">BibTeX</button>
   <a href="assets/pdf/KLOD_EMNLP_2026.pdf" rel="noopener" target="_blank">PDF</a>
   <a href="https://github.com/Hostoday/KLOD" rel="noopener" target="_blank">Code</a>
 </div>
 
 <div class="pub-details" id="summary-klod">
-  <p>Proposes a KL-based objective that preserves the model’s non-target token distribution during sequential knowledge editing, with the aim of reducing locality degradation while maintaining edit effectiveness.</p>
+  <p>Fine-tuning-based knowledge editing is simple and architecture-agnostic, but standard cross-entropy increases the edited target probability without explicitly constraining changes in the non-target output distribution. In sequential editing, such unconstrained redistribution can accumulate as distributional drift and contribute to locality degradation. We propose KLOD, a bounded and distribution-preserving objective for fine-tuning-based knowledge editing that separates the intended target update from distributions that should remain stable. KLOD stops target amplification once a probability threshold is reached, while preserving the target-excluded non-target distribution at target positions and the full next-token distribution at prefix positions. Experiments on CounterFact and ZsRE with Llama3-8B-Instruct and Qwen2.5-7B-Instruct show that KLOD substantially mitigates locality degradation while maintaining high edit reliability. The target probability threshold further provides a controllable Generalization--Locality trade-off. Ablation, multi-seed, and distributional KL analyses support the interpretation that KLOD's locality gains are associated with preserving output distributions rather than simply weakening the edit.</p>
 </div>
 
 <div class="pub-details" id="bib-klod">
@@ -118,13 +118,13 @@
 <article class="publication"><div>
 <span class="pub-venue">ARR · May 2026</span>
 <h3 class="pub-title">Target-Token Prior as a Predictor of Forgetting in Fine-Tuning-Based Knowledge Editing</h3>
-<p class="pub-authors"><span class="me">Hojun Jeong*</span>, Gyunyeon Kim*, and Sangwoo Kang</p>
+<p class="pub-authors"><span class="me">Hojun Jeong*</span>, Gyunyeop Kim*, and Sangwoo Kang</p>
 <p class="pub-meta">Under review at ACL Rolling Review, May 2026 cycle · *Equal contribution</p>
 <div class="pub-links"><button aria-expanded="false" data-label="Summary" data-toggle-target="summary-prior" type="button">Summary</button><button aria-expanded="false" data-label="BibTeX" data-toggle-target="bib-prior" type="button">BibTeX</button><span class="pending">Preprint pending</span><span class="pending">Code pending</span></div>
 <div class="pub-details" id="summary-prior"><p>Investigates whether a target token’s pre-update probability predicts later knowledge degradation, and evaluates an intervention that increases the target probability before fine-tuning-based editing.</p></div>
 <div class="pub-details" id="bib-prior"><pre id="bibtext-prior">@article{jeong2026targetprior,
   title = {Target-Token Prior as a Predictor of Forgetting in Fine-Tuning-Based Knowledge Editing},
-  author = {Jeong, Hojun and Kim, Gyunyeon and Kang, Sangwoo},
+  author = {Jeong, Hojun and Kim, Gyunyeop and Kang, Sangwoo},
   note = {Under review at ACL Rolling Review, May 2026 cycle},
   year = {2026}
 }</pre><button class="button" data-copy-target="bibtext-prior" type="button">Copy BibTeX</button><span aria-live="polite" class="copy-status"></span></div>
