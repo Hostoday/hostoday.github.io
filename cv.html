@@ -1,60 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Curriculum vitae of Hojun Jeong." name="description"/>
-<meta content="Hojun Jeong" name="author"/>
-<meta content="CV · Hojun Jeong" property="og:title"/>
-<meta content="Curriculum vitae of Hojun Jeong." property="og:description"/>
-<meta content="website" property="og:type"/>
-<title>CV · Hojun Jeong</title>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="assets/styles.css?v=20260719-4" rel="stylesheet"/>
-<script>try{document.documentElement.dataset.theme=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light')}catch(e){}</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Curriculum vitae of Hojun Jeong, M.S. researcher at Gachon University working on knowledge editing, forgetting, and representation dynamics." />
+  <meta name="author" content="Hojun Jeong" />
+  <meta property="og:title" content="CV · Hojun Jeong" />
+  <meta property="og:description" content="Education, publications, research experience, awards, and technical skills of Hojun Jeong." />
+  <meta property="og:type" content="website" />
+  <title>CV · Hojun Jeong</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="assets/styles.css?v=20260719-4" />
+  <script>
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('theme') ||
+        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (e) {}
+  </script>
+  <style>
+    /* CV-only spacing. Shared theme colors and typography come from assets/styles.css. */
+    .cv-project { margin-top: 22px; }
+    .cv-project:first-of-type { margin-top: 17px; }
+    .cv-project h4 { margin: 0 0 5px; font-size: .97rem; line-height: 1.45; }
+    .cv-project .compact-list { margin-top: 6px; }
+    .cv-interests { max-width: 860px; }
+    .cv-interests p { margin: 0; }
+    .cv-publications .publication-list { max-width: 860px; }
+    .cv-publications .publication { padding: 22px 0; }
+    .cv-publications .publication:first-child { padding-top: 0; }
+    .cv-publications .pub-links { margin-top: 9px; }
+    @media print { .pdf-section { display: none; } }
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#content">Skip to content</a>
-<header class="site-header"><div class="nav-wrap">
-<a class="site-name" href="index.html">Hojun Jeong <span>정호준</span></a>
-<div class="nav-actions"><nav aria-label="Primary navigation" class="site-nav"><a href="index.html">About</a><a href="publications.html">Publications</a><a href="research.html">Research</a><a aria-current="page" href="cv.html">CV</a></nav>
-<button aria-label="Use dark theme" class="icon-button" data-theme-toggle="" type="button"></button>
-<button aria-expanded="false" aria-label="Open navigation" class="icon-button menu-button" data-menu-toggle="" type="button"><svg aria-hidden="true" height="18" viewbox="0 0 24 24" width="18"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg></button></div>
-</div></header>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="site-name" href="index.html">Hojun Jeong <span>정호준</span></a>
+      <div class="nav-actions">
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">About</a>
+          <a href="publications.html">Publications</a>
+          <a href="research.html">Research</a>
+          <a href="cv.html" aria-current="page">CV</a>
+        </nav>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Use dark theme"></button>
+        <button class="icon-button menu-button" type="button" data-menu-toggle aria-label="Open navigation" aria-expanded="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-<main id="content">
-<header class="page-header"><p class="kicker">Curriculum vitae</p><h1>CV</h1><p>Research experience, education, presentations, and technical background. A complete PDF version is available below.</p></header>
-<div class="cv-toolbar"><a class="button primary" href="assets/pdf/Hojun_Jeong_CV.pdf" rel="noopener" target="_blank">Open PDF ↗</a><a class="button" download="" href="assets/pdf/Hojun_Jeong_CV.pdf">Download PDF</a></div>
+  <main id="content">
+    <header class="page-header">
+      <p class="kicker">Curriculum vitae</p>
+      <h1>CV</h1>
+      <p>Research interests, education, publications, research experience, awards, presentations, and technical skills. The complete PDF is available below.</p>
+    </header>
 
-<section class="cv-section"><h2>Education</h2>
-<div class="timeline-list">
-<article class="timeline-item"><p class="timeline-date">Mar 2025–Present</p><div><h3>M.S. in AI Software, Artificial Intelligence</h3><p class="timeline-place">Gachon University · Advisor: Prof. Sangwoo Kang · GPA 4.3 / 4.5</p></div></article>
-<article class="timeline-item"><p class="timeline-date">Mar 2023–Feb 2025</p><div><h3>B.S. in AI Software, Artificial Intelligence</h3><p class="timeline-place">Gachon University · GPA 3.6 / 4.5</p></div></article>
-<article class="timeline-item"><p class="timeline-date">Mar 2018–Feb 2023</p><div><h3>Coursework in Computer Engineering</h3><p class="timeline-place">Dongguk University · Transferred to Gachon University</p></div></article>
-</div></section>
+    <div class="cv-toolbar">
+      <a class="button primary" href="assets/pdf/Hojun_Jeong_CV.pdf" target="_blank" rel="noopener">Open PDF ↗</a>
+      <a class="button" href="assets/pdf/Hojun_Jeong_CV.pdf" download>Download PDF</a>
+    </div>
 
-<section class="cv-section"><h2>Research experience</h2>
-<div class="timeline-list">
-<article class="timeline-item"><p class="timeline-date">Mar 2025–Present</p><div><h3>Graduate Research Student</h3><p class="timeline-place">NLP / AI Lab, Gachon University · Supervisor: Prof. Sangwoo Kang</p><ul class="compact-list"><li>Research on sequential knowledge editing, catastrophic forgetting, and post-training representation dynamics.</li><li>Lead method development, implementation, experiment design, ablation studies, analysis, and technical writing for current research projects.</li></ul></div></article>
-<article class="timeline-item"><p class="timeline-date">Sep 2023–Feb 2025</p><div><h3>Research Assistant</h3><p class="timeline-place">NLP / AI Lab, Gachon University · Supervisor: Prof. Sangwoo Kang</p><ul class="compact-list"><li>Conducted research on dialogue summarization and knowledge editing for large language models.</li><li>Implemented fine-tuning, prompting, and evaluation pipelines using PyTorch and Hugging Face Transformers.</li></ul></div></article>
-</div></section>
+    <section class="cv-section cv-interests" id="research-interests" aria-labelledby="interests-heading">
+      <h2 id="interests-heading">Research interests</h2>
+      <p>Knowledge Editing · Knowledge Retention and Forgetting · Sequential Model Updates · Representation Dynamics · Mechanistic Interpretability</p>
+    </section>
 
-<section class="cv-section"><h2>Awards and honors</h2><div class="timeline-list"><article class="timeline-item"><p class="timeline-date">Oct 2025</p><div><h3>Outstanding Presentation Paper Award</h3><p class="timeline-place">HCLT 2025 · Awarded for “A Verify-Refine Hybrid for Dialogue Summarization with Topic Segmentation and Keypoint Coverage.”</p></div></article></div></section>
+    <section class="cv-section" id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <p class="timeline-date">Mar 2025–Present</p>
+          <div>
+            <h3>M.S. in AI Software (Artificial Intelligence)</h3>
+            <p class="timeline-place">Gachon University · Advisor: Prof. Sangwoo Kang · GPA: 4.3 / 4.5</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">Mar 2023–Feb 2025</p>
+          <div>
+            <h3>B.S. in AI Software (Artificial Intelligence)</h3>
+            <p class="timeline-place">Gachon University · GPA: 3.6 / 4.5</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">Mar 2018–Feb 2023</p>
+          <div>
+            <h3>Coursework in Computer Engineering</h3>
+            <p class="timeline-place">Dongguk University · Transferred to Gachon University</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section class="cv-section"><h2>Presentations</h2>
-<div class="timeline-list">
-<article class="timeline-item"><p class="timeline-date">Oct 2025</p><div><h3>A Verify-Refine Hybrid for Dialogue Summarization with Topic Segmentation and Keypoint Coverage</h3><p class="timeline-place">Oral presentation · HCLT 2025 · Outstanding Presentation Paper Award</p></div></article>
-<article class="timeline-item"><p class="timeline-date">Jul 2025</p><div><h3>Structured Zero-Shot Prompts through Rule-Based Intent Analysis for Dialogue Summarization</h3><p class="timeline-place">Poster presentation · KCC 2025</p></div></article>
-</div></section>
+    <section class="cv-section cv-publications" id="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Publications and manuscripts</h2>
+      <div class="publication-list">
+        <article class="publication">
+          <span class="pub-venue">Peer-reviewed international conference · EMNLP 2026 Findings</span>
+          <h3 class="pub-title">KLOD: Locality-Preserving Knowledge Editing via Non-Target Distribution Preservation</h3>
+          <p class="pub-authors"><span class="me">Hojun Jeong*</span>, Gyunyeop Kim*, and Sangwoo Kang</p>
+          <p class="pub-meta">Findings of the Association for Computational Linguistics: EMNLP 2026 · Accepted / to appear</p>
+          <div class="pub-links">
+            <a href="assets/pdf/KLOD_EMNLP_2026.pdf" target="_blank" rel="noopener">Paper ↗</a>
+            <a href="https://github.com/Hostoday/KLOD" target="_blank" rel="noopener">Code ↗</a>
+            <a href="publications.html#klod-publication">Publication details →</a>
+          </div>
+        </article>
+        <article class="publication">
+          <span class="pub-venue">Manuscript under review · Expert Systems with Applications</span>
+          <h3 class="pub-title">Probability-Lift Fine-Tuning for Knowledge Editing: Target-Token Prior as a Signal of Update Demand</h3>
+          <p class="pub-authors"><span class="me">Hojun Jeong*</span>, Gyunyeop Kim*, and Sangwoo Kang</p>
+          <p class="pub-meta">Under review at Expert Systems with Applications</p>
+          <div class="pub-links"><a href="publications.html#plft-publication">Manuscript details →</a></div>
+        </article>
+        <article class="publication">
+          <span class="pub-venue">Manuscript under review · MDPI journal</span>
+          <h3 class="pub-title">Beyond Norm Growth: A Geometric Decomposition of Hidden-State Drift in Sequential Knowledge Editing</h3>
+          <p class="pub-authors"><span class="me">Hojun Jeong</span> and Sangwoo Kang</p>
+          <p class="pub-meta">Under review at an MDPI journal</p>
+          <div class="pub-links"><a href="publications.html#beyond-norm-publication">Manuscript details →</a></div>
+        </article>
+        <article class="publication">
+          <span class="pub-venue">Domestic conference · HCLT 2025</span>
+          <h3 class="pub-title">A Verify-Refine Hybrid for Dialogue Summarization with Topic Segmentation and Keypoint Coverage</h3>
+          <p class="pub-authors"><span class="me">Hojun Jeong</span> and Sangwoo Kang</p>
+          <p class="pub-meta">HCLT 2025, pp. 359–364, October 2025 · In Korean</p>
+          <p class="pub-award">Outstanding Presentation Paper Award · HCLT 2025</p>
+          <div class="pub-links"><a href="publications.html">Publication details →</a></div>
+        </article>
+        <article class="publication">
+          <span class="pub-venue">Domestic conference · KCC 2025</span>
+          <h3 class="pub-title">Structured Zero-Shot Prompts through Rule-Based Intent Analysis for Dialogue Summarization</h3>
+          <p class="pub-authors"><span class="me">Hojun Jeong</span> and Sangwoo Kang</p>
+          <p class="pub-meta">Korea Computer Congress (KCC 2025), July 2025 · In Korean</p>
+          <div class="pub-links"><a href="publications.html">Publication details →</a></div>
+        </article>
+      </div>
+      <p class="pub-meta">* Equal contribution.</p>
+    </section>
 
-<section class="cv-section"><h2>Technical background</h2>
-<dl class="skill-list"><div><dt>Programming</dt><dd>Python; working familiarity with Java and C</dd></div><div><dt>Frameworks</dt><dd>PyTorch; Hugging Face Transformers</dd></div><div><dt>Research methods</dt><dd>Supervised fine-tuning, knowledge editing, sequential knowledge editing, KL-regularized training, token-level probability analysis, layer-wise analysis, ablation study design, and language-model evaluation</dd></div><div><dt>Languages</dt><dd>Korean (native); English (academic reading and writing)</dd></div></dl>
-</section>
+    <section class="cv-section" id="research-experience" aria-labelledby="experience-heading">
+      <h2 id="experience-heading">Research experience</h2>
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <p class="timeline-date">Mar 2025–Present</p>
+          <div>
+            <h3>Graduate Research Student</h3>
+            <p class="timeline-place">ISNLP Lab, Gachon University · Advisor: Prof. Sangwoo Kang</p>
 
-<section class="cv-section pdf-section"><h2>Full CV</h2><p class="section-intro">The embedded viewer may be limited on some mobile browsers. Use “Open PDF” above when the document does not render.</p>
-<object class="cv-frame" data="assets/pdf/Hojun_Jeong_CV.pdf" type="application/pdf"><p>Your browser cannot display the embedded PDF. <a href="assets/pdf/Hojun_Jeong_CV.pdf">Open the CV directly.</a></p></object></section>
-</main>
-<footer class="site-footer"><div class="footer-wrap"><span>© 2026 Hojun Jeong</span><span>Last updated August 2026</span></div></footer>
-<script src="assets/script.js"></script>
+            <div class="cv-project">
+              <h4>KLOD — Locality-Preserving Sequential Knowledge Editing</h4>
+              <p class="pub-meta">EMNLP 2026 Findings</p>
+              <ul class="compact-list">
+                <li>Identified unintended drift in non-target output distributions under cross-entropy editing; designed bounded target logit-odds optimization with distribution-preserving KL constraints.</li>
+                <li>Led implementation, baselines, experimental design, and ablations across two model backbones and two datasets; evaluated sequential editing up to 150,000 edits.</li>
+                <li>On LLaMA-3-8B-Instruct / CounterFact, improved locality from 1.87 to 44.75 while retaining 99.70 reliability; on zsRE, achieved 86.47 locality and 99.89 reliability.</li>
+              </ul>
+            </div>
+
+            <div class="cv-project">
+              <h4>PLFT-KE — Target-Prior-Aware Fine-Tuning for Knowledge Editing</h4>
+              <p class="pub-meta">Under review</p>
+              <ul class="compact-list">
+                <li>Studied forgetting using controlled synthetic biographies with 50K pre-training and 50K fine-tuning individuals; found target-token prior more informative than general output-token confidence in this setting.</li>
+                <li>Developed a two-stage probability-lift initialization: optimize a latent shift with the model frozen, convert it into a rank-1 weight update, then consolidate using standard fine-tuning.</li>
+                <li>On LLaMA-3.2-3B / CounterFact, improved FT-M score from 58.43 to 72.41 and specificity from 33.55 to 59.40; observed weaker and heterogeneous gains in long sequential editing.</li>
+              </ul>
+            </div>
+
+            <div class="cv-project">
+              <h4>Beyond Norm Growth — Geometric Analysis of Hidden-State Drift</h4>
+              <p class="pub-meta">Under review</p>
+              <ul class="compact-list">
+                <li>Decomposed base-relative hidden-state displacement into parallel and orthogonal components to distinguish representation drift from scalar norm growth.</li>
+                <li>Observed an approximately 98.7–99.3% checkpoint-median orthogonal displacement-energy share at the measured boundary; tested orthogonal interventions against same-final-norm parallel controls.</li>
+                <li>Across 34 eligible endpoint states, 25% orthogonal reduction yielded mean changes of +0.729 percentage points in locality and +0.333 percentage points in teacher-forced efficacy, with heterogeneous effects.</li>
+              </ul>
+            </div>
+
+            <div class="cv-project">
+              <h4>Ongoing Research — Early-Stage Forgetting and Layer-Wise Transformations</h4>
+              <ul class="compact-list">
+                <li>Investigating early fine-tuning forgetting and layer-wise rotational/scaling changes to connect representation subspaces, output distributions, and factual recall.</li>
+              </ul>
+            </div>
+            <p><a class="text-link" href="research.html">Explore research projects →</a></p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">Sep 2023–Feb 2025</p>
+          <div>
+            <h3>Research Assistant</h3>
+            <p class="timeline-place">NLP / AI Lab, Gachon University · Advisor: Prof. Sangwoo Kang</p>
+            <ul class="compact-list">
+              <li>Developed fine-tuning, prompting, and evaluation pipelines for dialogue summarization and knowledge editing; contributed to Korean conference publications.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section" id="awards" aria-labelledby="awards-heading">
+      <h2 id="awards-heading">Awards and honors</h2>
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <p class="timeline-date">Oct 2025</p>
+          <div>
+            <h3>Outstanding Presentation Paper Award</h3>
+            <p class="timeline-place">HCLT 2025 · For “A Verify-Refine Hybrid for Dialogue Summarization with Topic Segmentation and Keypoint Coverage”</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section" id="presentations" aria-labelledby="presentations-heading">
+      <h2 id="presentations-heading">Presentations</h2>
+      <div class="timeline-list">
+        <article class="timeline-item">
+          <p class="timeline-date">Oct 2025</p>
+          <div>
+            <h3>A Verify-Refine Hybrid for Dialogue Summarization with Topic Segmentation and Keypoint Coverage</h3>
+            <p class="timeline-place">Oral presentation · HCLT 2025</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-date">Jul 2025</p>
+          <div>
+            <h3>Structured Zero-Shot Prompts through Rule-Based Intent Analysis for Dialogue Summarization</h3>
+            <p class="timeline-place">Poster presentation · KCC 2025</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cv-section" id="technical-skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical skills</h2>
+      <dl class="skill-list">
+        <div>
+          <dt>Programming and tools</dt>
+          <dd>Python, PyTorch, Hugging Face Transformers, EasyEdit, Git, Linux, LaTeX; NumPy, Pandas, Matplotlib</dd>
+        </div>
+        <div>
+          <dt>Research methods</dt>
+          <dd>Knowledge editing, localized fine-tuning, KL-based regularization, representation analysis, sequential evaluation, ablation studies</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="cv-section pdf-section" id="full-cv" aria-labelledby="full-cv-heading">
+      <h2 id="full-cv-heading">Full CV</h2>
+      <p class="section-intro">The embedded PDF viewer may be limited in some mobile browsers. Use “Open PDF” above if the document does not render.</p>
+      <object class="cv-frame" data="assets/pdf/Hojun_Jeong_CV.pdf" type="application/pdf" aria-label="Full CV of Hojun Jeong">
+        <p>Your browser cannot display the embedded PDF. <a href="assets/pdf/Hojun_Jeong_CV.pdf">Open the CV directly.</a></p>
+      </object>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-wrap">
+      <span>© 2026 Hojun Jeong</span>
+      <span>Last updated October 2026</span>
+    </div>
+  </footer>
+  <script src="assets/script.js"></script>
 </body>
 </html>
